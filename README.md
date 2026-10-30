@@ -82,4 +82,10 @@ ___
  ___
  Contributions are always welcome!<br><br>
  You can contribute with us to make this more functionable.
+
+ ### Deploy the frontend to Vercel
+
+ Import this repository into Vercel and leave the project root set to the repository root. The root `vercel.json` installs and builds the React app in `frontend/kfc-app`, publishes its `build` directory, and enables client-side route refreshes.
+
+ In the Vercel project settings, set `REACT_APP_API_URL` to the public URL of a deployed backend. The frontend defaults to `http://localhost:8080` for local development; that address is not reachable by visitors to a Vercel deployment. Configure the backend's `FRONTEND_ORIGIN` with the deployed frontend origin as well.
    
